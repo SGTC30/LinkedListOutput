@@ -12,9 +12,9 @@ struct Node {
 int main() {
 
     // Open the input file
-    std::ifstream inputFile("input.txt");
+    std::ifstream inputFile("input.txt"); // This is where the input file is placed you might be able to turn it into a place where a prompt to input into this file here
 
-    if (!inputFile.is_open()) {
+    if (!inputFile.is_open()) { // here in the space where the input file should be is what might cause an error
         std::cerr << "Error opening the input file." << std::endl;
         return 1;
     }
